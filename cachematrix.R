@@ -1,7 +1,11 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The two functions initialise the matrix set in the function as a global
+## variable and allow it to be dealt with in multiple ways and find its inverse
+## and store that as a global variable, respectively
 
-## Write a short comment describing this function
+## this function can be used to intialise a matrix and cache it, and also
+## contains functions to be able to change the contents of the matrix, retrieve
+## the matrix, retrieve the inverted matrix and also set the matrix as an 
+## inverted matrix
 
 makeCacheMatrix <- function(x = matrix()) {
   inv = NULL
@@ -19,7 +23,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## this function solves the cached matrix, i.e, calculates its inverse and sets
+## that to the global variable inv
 
 cacheSolve <- function(x, ...) {
   inv <- x$getinverse()
